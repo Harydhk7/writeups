@@ -1,13 +1,13 @@
 ________________________________________
-**Target Overview
-**
-•	IP Address: 10.10.11.25
+**Target Overview**
+
+**•	IP Address: 10.10.11.25
 •	Domain Name: greenhorn.htb
 •	Operating System: Linux (detected via Nmap)
 •	Services:
 o	SSH (OpenSSH 8.9p1)
 o	HTTP (nginx 1.18.0 hosting Pluck CMS)
-o	HTTP (Gitea DevOps platform on port 3000)
+o	HTTP (Gitea DevOps platform on port 3000)**
 
 <img width="778" height="832" alt="image" src="https://github.com/user-attachments/assets/bf17b325-e23f-4a10-81f5-84dd0ba0ec00" />
 
