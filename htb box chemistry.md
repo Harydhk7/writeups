@@ -6,11 +6,10 @@ An Nmap scan identified the following open port and service:
 
 - **Port 5000**: A web service was running.
 
-> ![](media/image1.png){width="4.778989501312336in"
-> height="3.6643350831146106in"}
->
-> ![](media/image2.png){width="4.768693132108487in"
-> height="3.686567147856518in"}
+<img width="717" height="550" alt="image" src="https://github.com/user-attachments/assets/eed07366-ce8f-44c8-818c-e8a96123cdc8" />
+<img width="715" height="553" alt="image" src="https://github.com/user-attachments/assets/cdb8dede-39fb-4fdf-a8ee-d43514df1f56" />
+
+
 
 **2. Initial Exploitation**
 
@@ -20,11 +19,12 @@ enabling **Remote Code Execution (RCE)**.
 
 - **Attack**: Uploaded a malicious .cif file to achieve a reverse shell.
 
-![](media/image3.png){width="3.3028521434820646in"
-height="2.53253937007874in"}
+<img width="495" height="380" alt="image" src="https://github.com/user-attachments/assets/7a40c698-b690-4bbe-948a-36acd006dd03" />
 
-![](media/image4.png){width="5.823140857392826in"
-height="3.1118963254593175in"}
+
+
+<img width="873" height="467" alt="image" src="https://github.com/user-attachments/assets/ddbf3a8f-1919-470b-abc9-0a4f1b8631d0" />
+
 
 <https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f>
 
@@ -39,11 +39,10 @@ rosa.
 
 > ssh <rosa@10.10.11.38>
 >
-> ![](media/image5.png){width="5.065367454068242in"
-> height="3.9154746281714785in"}
->
-> ![](media/image6.png){width="5.047004593175853in"
-> height="3.9012806211723534in"}
+ <img width="760" height="587" alt="image" src="https://github.com/user-attachments/assets/2539b4c4-907a-40d2-a063-27afdad55df2" />
+ <img width="757" height="585" alt="image" src="https://github.com/user-attachments/assets/70cd747c-0994-4434-8b00-b972277a3354" />
+
+
 
 **4. Locating the User Flag**
 
@@ -61,8 +60,7 @@ port **8080**.
 
 > netstat --tuln
 >
-> ![](media/image7.png){width="5.363576115485564in"
-> height="4.145985345581802in"}
+<img width="805" height="622" alt="image" src="https://github.com/user-attachments/assets/f26b5cb3-15ed-4a65-b3f1-221fc2d2e2a2" />
 
 **6. Port Forwarding**
 
@@ -81,8 +79,7 @@ HTTP response headers:
 
 curl -I <http://127.0.0.1:8080>
 
-![](media/image8.png){width="5.649807524059493in"
-height="4.367736220472441in"}
+<img width="848" height="655" alt="image" src="https://github.com/user-attachments/assets/bc2efd27-7cad-4627-b72d-049a9d383054" />
 
 The headers revealed the use of **aiohttp**, a Python web framework,
 which was an outdated version vulnerable to **CVE-2024-23334**. This
